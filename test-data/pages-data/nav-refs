@@ -1,0 +1,32 @@
+Все сегменты;statistics/segments?segmentId=any&;60;false;false
+Платный трафик;statistics/segments?segmentId=51&;60;false;false
+Поисковые системы;statistics/segments?segmentId=52&;60;false;false
+Рефералы;statistics/segments?segmentId=53&;60;false;false
+Прямые заходы;statistics/segments?segmentId=54&;60;false;false
+UTM-метки;analytics/utmTags?;20;false;false
+Ключевые запросы;analytics/keywords?medium=organic&mode=1&;60;false;false
+По времени и дням;analytics/calls?;60;false;false
+По устройствам;analytics/devices?section=device&;60;false;false
+По браузерам;analytics/devices?section=browser&;60;false;false
+По ОС;analytics/devices?section=os&;60;false;false
+Отложенный спрос;analytics/otlozhenniy_spros?;60;false;false
+Журнал Звонков;calls/calls_diary?;60;false;false
+Журнал Заявок;requests/requests_diary?;60;false;false
+Список клиентов;clients?;30;false;false
+Журнал продаж;orders/orders_diary?;60;false;false
+ROI отчет;sales/roi?;60;false;false
+Callbackhunter;conversion_increase/callbackhunter?;60;false;false
+Настройка;conversion_increase/dynamic_call?;30;true;false
+Статистика;analytics/callbacks?;30;true;false
+Яндекс.Директ;context_optimization/index?;30;true;false
+Alytics;settings/api/alytics?;30;true;false
+AmoCrm;settings/api/amocrm?;30;true;false
+Мой Склад;settings/api/moyskladcrm?;30;true;false
+Universal Analytics;settings/api/gua?;30;true;false
+Яндекс.Метрика;settings/yametrika?;30;true;false
+Google AdWords;settings/google_adwords?;30;true;false
+Яндекс.Директ;settings/yadirect?;30;true;false
+RetailCRM;settings/retailcrm?;30;true;false
+Инструкция подключения;settings/info?;10;true;false
+F.A.Q.;support/faq?;10;false;false
+API документация;support/apidoc?;10;false;false

@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" >
+  <!-- <test name="Nopackage" >
+    <classes>
+       <class name="NoPackageTest" />
+    </classes>
+  </test> -->
+  <test name="AuthorizationRegression">
+    <classes>
+  <!--    <class name="ru.ct.pages.tests.AllPagesTest"/>-->
+      <class name="ru.ct.auth.tests.AuthTest"/>
+    </classes>
+  </test>
+</suite>
+
+
+<!--  
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Suite1" verbose="1" >
+  <test name="path">
+    <packages>
+      <package name="com.example.test.AppTest/>
+   </packages>
+ </test>
+</suite>
+-->

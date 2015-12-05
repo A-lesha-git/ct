@@ -1,0 +1,28 @@
+↓фаербаг(false,true),
+урл↓
+fireBugActive? = false
+url = stage2.calltouch.ru
+devurl = http://lk.galvis.calltouch.ru/login
+stage1url = stage1.calltouch.ru
+stage2url = stage2.calltouch.ru
+-----------------------------
+↓имя, фамилия, пол, почта, телефон, rcodes
+admin = a.galvis
+pp = pp#a.galvis
+calltouch = calltouch#a.galvis
+psw = kuyoh1Xie4Aif8A
+name = Ivan
+lastName = Ivanov
+gender = MALE
+email = neotestmail@test.test
+password = 123456789qwe
+phone = +7 999 666 33 11
+document = 342543567
+dateOfBirth = 01.08.1991
+lkcalltouch = http://lk.ca123lltouch.ru/
+devgal = http://lk.galvis.calltouch.ru/
+-----------------------------
+↓Комменты
+reviewgood = Отличная книжка! Всем советую к прочтению! огромное спасибо автору за сие произведение! 
+
+----------------------------- 

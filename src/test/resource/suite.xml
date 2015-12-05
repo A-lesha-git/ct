@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Component Tests" verbose="2" annotations="JDK">
+  <test name="a-t1" preserve-order="true" >
+    <classes>
+      <class name="ru.ct.auth.tests.AuthTest" />
+      <class name="ru.ct.auth.tests.AuthTestTwo" />
+    </classes>
+  </test>
+  <test name="a-t2" preserve-order="true" >
+    <classes>
+      <class name="ru.ct.auth.tests.AuthTest" />
+      <class name="ru.ct.auth.tests.AuthTestTwo" />
+      <!--  <class name="server.SCHTest" />
+      <class name="server.PRGTest" />
+      <class name="server.SIBBTest" />
+      <class name="server.EDNTest" />
+      <class name="server.PPVTest" /> -->
+    </classes>
+  </test>
+</suite>

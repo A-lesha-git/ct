@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Tests" verbose="5" data-provider-thread-count="1" parallel="tests">
+		<test name="auth">
+		<parameter name="" value=""></parameter>
+		<classes>
+			<class name="ru.ct.tests.ListTest"></class>
+			<!--  <class name="ru.ct.auth.tests.AuthDataProvTest"></class> -->
+		</classes>
+	</test>
+	
+	<!-- использование групп  
+	<test name="Test1">
+		<groups>
+			<define name="include-group">
+				<include name="include-test-one"></include>
+				<include name="include-test-two"></include>
+			</define>
+		</groups>
+	<classes>
+		    <class name="com.example.test.OneTest"/>
+		    <class name="com.example.test.FourTest"/>
+	</classes>
+	
+	--> 
+	
+	
+	<!-- это самый простой вариант, просто перечисляются тесты
+		<parameter name="path" value="/"/>		
+		<classes>
+		    <class name="com.example.test.AppTest"/>
+		
+		 <class name="ru.st.selenium.CreateFilm"/>
+		    <class name="ru.st.selenium.Remove"/>
+		    <class name="ru.st.selenium.Logout"/>
+		</classes>
+	</test>  -->
+</suite>
