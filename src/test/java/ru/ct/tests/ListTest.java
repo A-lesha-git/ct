@@ -15,11 +15,11 @@ public class ListTest extends TestBase{
 	 
 	 
 
-	 
+	 /*
 	 @Test(dataProvider="authDataPagesFromFile", dataProviderClass = DataGeneratorPages.class, priority = 3)
 	 public void find500ErrorsOnPagesTest(User user) throws IOException{
 			app.getNavigationHelper().testAllPages(user);
-	 }
+	 }*/
 	 
 	 @Test(dataProvider="authDataFromFile", dataProviderClass = DataGeneratorAuth.class, priority = 2)
 		  public void testAuthGenerator(User userUnit) throws Exception {
