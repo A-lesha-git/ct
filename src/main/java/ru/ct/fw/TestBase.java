@@ -9,6 +9,7 @@ import java.util.Properties;
 import java.util.logging.Logger;
 
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -57,28 +58,29 @@ public class TestBase {
 	*/
 	private static final String PROP_FILE_PROFILE = "/conf.properties";
 	private static final String PROP_FILE = "/application.properties";
-	@BeforeTest
-	@Parameters({"configFile"})
-	public void setUp(@Optional String configFile) throws Exception {
-		
-		if(configFile == null){
-			configFile = "/conf.properties";
-		}
+//	@BeforeTest выполнить до начала теста с параметрами
+	//@Parameters({"configFile"})
+	//public void setUp(@Optional String configFile) throws Exception { 
+//		
+//		if(configFile == null){
+//			configFile = "/conf.properties";
+//		}
 
 		//Properties props = new Properties();
+	@BeforeClass
+	protected void setUp() throws Exception {
+		//app = AppManager.getInstance();
 		try {
 			propsP.load(PropertyLoader.class.getResourceAsStream(PROP_FILE_PROFILE));
 			propsF.load(PropertyLoader.class.getResourceAsStream(PROP_FILE));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}			
-			
 		log.info("SetUp start");
 		app = new AppManager();
 		app = AppManager.getInstance();
 		app.setPropertisP(propsP);
-		app.setPropertisF(propsF);
-			
+		app.setPropertisF(propsF);	
 	  }
 	
 	@AfterTest
@@ -86,7 +88,4 @@ public class TestBase {
 		log.info("Tear down");
 		app.stop();
 	  }
-
-	
-
 }

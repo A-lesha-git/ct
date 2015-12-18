@@ -43,7 +43,7 @@
 		    	<target>1.7</target>
 		    	<encoding>UTF-8</encoding>
 		    	<fork>true</fork>
-                <executable>C:\Program Files\Java\jdk1.8.0_65\bin\javac.exe</executable>	    	
+               <!--  <executable>C:\Program Files\Java\jdk1.8.0_65\bin\javac.exe</executable>--> 	    	
 	    	 </configuration>
 	  	</plugin>
 	   	<plugin>
@@ -81,8 +81,8 @@
 		        	<version>2.19</version>
 		        	<configuration>
 		          		<suiteXmlFiles>
-		            	  	<suiteXmlFile>src/test/resource/testng.xml</suiteXmlFile> 
-		            		<file>src/test/resources/suite.xml</file>
+		            	  	<suiteXmlFile>src/test/resource/testng-all.xml</suiteXmlFile> 
+		            	<!--	<file>src/test/resources/suite.xml</file>-->
             				
 		          		</suiteXmlFiles>
 		        	</configuration>
@@ -90,14 +90,43 @@
 	      </plugins>
 			</build>
 			<properties>
-		  		<url>stage1.calltouch.ru</url>
+		  		<url>stage2.calltouch.ru</url>
 				<fireBugActive>false</fireBugActive>
 				
 			</properties>
 			
-			<activation>
+			 <!--   <activation>
 				<activeByDefault>true</activeByDefault>
-			</activation>
+			</activation> --> 
+		</profile>
+		
+		<profile>
+			<id>lk.galvis</id>
+			<build>
+			<plugins>
+				<plugin>
+		        	<groupId>org.apache.maven.plugins</groupId>
+		        	<artifactId>maven-surefire-plugin</artifactId>
+		        	<version>2.19</version>
+		        	<configuration>
+		          		<suiteXmlFiles>
+		            	  	<suiteXmlFile>src/test/resource/testng-all.xml</suiteXmlFile> 
+		            	<!--	<file>src/test/resources/suite.xml</file>-->
+            				
+		          		</suiteXmlFiles>
+		        	</configuration>
+		      </plugin>
+	      </plugins>
+			</build>
+			<properties>
+		  		<url>lk.galvis.calltouch.ru</url>
+				<fireBugActive>false</fireBugActive>
+				
+			</properties>
+			
+			  <activation>
+				<activeByDefault>true</activeByDefault>
+			</activation> 
 		</profile>
 	</profiles>
 </project>

@@ -9,7 +9,7 @@
   <test name="AuthorizationRegression">
     <classes>
   <!--    <class name="ru.ct.pages.tests.AllPagesTest"/>-->
-      <class name="ru.ct.auth.tests.AuthTest"/>
+      <class name="ru.ct.auth.tests.SimpleTest"/>
     </classes>
   </test>
 </suite>

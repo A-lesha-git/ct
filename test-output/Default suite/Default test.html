@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Dec 04 13:05:48 MSK 2015</td>
+<td>Started on:</td><td>Thu Dec 17 14:35:52 MSK 2015</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27897 ms)</td>
+<tr><td>Total time:</td><td>85 seconds (85456 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,293 +67,63 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ru.ct.pages.tests.AllPagesTest.tearDown()'><b>tearDown</b><br>Test class: ru.ct.pages.tests.AllPagesTest</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
-System info: host: &apos;User-ÏÊ&apos;, ip: &apos;192.168.0.37&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:516)
-	at ru.ct.fw.WebDriverHelper.stop(WebDriverHelper.java:53)
-	at ru.ct.fw.AppManager.stop(AppManager.java:43)
-	at ru.ct.fw.TestBase.tearDown(TestBase.java:87)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.afterRun(TestRunner.java:1023)
-	at org.testng.TestRunner.run(TestRunner.java:628)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:170)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 42 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace551016187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace551016187'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
-System info: host: &apos;User-ÏÊ&apos;, ip: &apos;192.168.0.37&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:516)
-	at ru.ct.fw.WebDriverHelper.stop(WebDriverHelper.java:53)
-	at ru.ct.fw.AppManager.stop(AppManager.java:43)
-	at ru.ct.fw.TestBase.tearDown(TestBase.java:87)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.afterRun(TestRunner.java:1023)
-	at org.testng.TestRunner.run(TestRunner.java:628)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:170)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 42 more
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td title='ru.ct.auth.tests.RegistrationPositiveTest.negativeRegistrationTests()'><b>negativeRegistrationTests</b><br>Test class: ru.ct.auth.tests.RegistrationPositiveTest<br>Parameters: User [idAccount=0, name=!Iú÷$2s^2aÓ@h@pÅ6jÐO#&j@ÐS~^N$N)_K7MÔ^4Ê1, phoneMob=7123061484, email=NtCnJdJtVsk@QjuQZbMtkcA.eu, site=ìâíçï.ðô, loginName=null, psw=null, type=null, sites=null, startDate=null, endDate=null]</td>
+<td></td>
+<td>30</td>
+<td>ru.ct.auth.tests.RegistrationPositiveTest@48140564</td></tr>
 <tr>
-<td title='ru.ct.pages.tests.AllPagesTest.allPageLoadingTest()'><b>allPageLoadingTest</b><br>Test class: ru.ct.pages.tests.AllPagesTest</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
-System info: host: &apos;User-ÏÊ&apos;, ip: &apos;192.168.0.37&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
-	at ru.ct.fw.HelperWithWebDriverBase.findElement(HelperWithWebDriverBase.java:77)
-	at ru.ct.helpers.AutorithationHelper.verifyAuth(AutorithationHelper.java:112)
-	at ru.ct.helpers.AutorithationHelper.simpleLogin(AutorithationHelper.java:30)
-	at ru.ct.helpers.NavigationHelper.testAllPages(NavigationHelper.java:38)
-	at ru.ct.pages.tests.AllPagesTest.allPageLoadingTest(AllPagesTest.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:161)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:170)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 48 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace718571091", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace718571091'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
-System info: host: &apos;User-ÏÊ&apos;, ip: &apos;192.168.0.37&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
-	at ru.ct.fw.HelperWithWebDriverBase.findElement(HelperWithWebDriverBase.java:77)
-	at ru.ct.helpers.AutorithationHelper.verifyAuth(AutorithationHelper.java:112)
-	at ru.ct.helpers.AutorithationHelper.simpleLogin(AutorithationHelper.java:30)
-	at ru.ct.helpers.NavigationHelper.testAllPages(NavigationHelper.java:38)
-	at ru.ct.pages.tests.AllPagesTest.allPageLoadingTest(AllPagesTest.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:161)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:170)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 48 more
-</pre></div></td>
-<td>26</td>
-<td>ru.ct.pages.tests.AllPagesTest@58ceff1</td></tr>
+<td title='ru.ct.auth.tests.RegistrationPositiveTest.negativeRegistrationTests()'><b>negativeRegistrationTests</b><br>Test class: ru.ct.auth.tests.RegistrationPositiveTest<br>Parameters: User [idAccount=0, name=÷8n78IaÒ7ËX×80B94h29öÎË#+Um&1b4O16ÁìèÎ38¨gT3BedÎÅ0c4~M2!3b3¨C2@~01+û8K^5H6¸#ÆtRÌÔ^&86q#gUR()AÂÞ3-_2$p$XG@^48n78Oò0é&~Í_Î5ó%éÂ+@2hvÓz, phoneMob=7123080893, email=NtCnJdJtVsk@bMIPukTgJPqaK.kz, site=þæöéêÑ¨¸ÌÊÚÇýÇàþÀÈßÁÁúÞ.ðô, loginName=null, psw=null, type=null, sites=null, startDate=null, endDate=null]</td>
+<td></td>
+<td>5</td>
+<td>ru.ct.auth.tests.RegistrationPositiveTest@48140564</td></tr>
+<tr>
+<td title='ru.ct.auth.tests.RegistrationPositiveTest.negativeRegistrationTests()'><b>negativeRegistrationTests</b><br>Test class: ru.ct.auth.tests.RegistrationPositiveTest<br>Parameters: User [idAccount=0, name=(@68JüÔ_7%=v_2I9ÛJgÎQ*uv9ER83ay$0ÖXõ!mÑMv0æôÜ*bx%ÏêX$ñ8ÛKËíû8&8ZBeì!~4HÛoD¨s6r~¸eW+ë÷f5*xe7)Rîä$1à5àP!aY50@ú4*6)^=&Zé6Q49aÆê5ÿ5åÓ6ÇnT7=, phoneMob=7123044045, email=NtCnJdJtVsk@msolhmazNk.kz, site=ejaFQCLpdF.com, loginName=null, psw=null, type=null, sites=null, startDate=null, endDate=null]</td>
+<td></td>
+<td>9</td>
+<td>ru.ct.auth.tests.RegistrationPositiveTest@48140564</td></tr>
+<tr>
+<td title='ru.ct.auth.tests.RegistrationPositiveTest.negativeRegistrationTests()'><b>negativeRegistrationTests</b><br>Test class: ru.ct.auth.tests.RegistrationPositiveTest<br>Parameters: User [idAccount=0, name=È^85QõQNLQ4$-Kj$3Ð#6ÅÈ6I5ü93+, phoneMob=7123082718, email=NtCnJdJtVsk@jjHrJuAXUzE.eu, site=COcQqbKecZRLWfxuCjtasDos.ru, loginName=null, psw=null, type=null, sites=null, startDate=null, endDate=null]</td>
+<td></td>
+<td>5</td>
+<td>ru.ct.auth.tests.RegistrationPositiveTest@48140564</td></tr>
+<tr>
+<td title='ru.ct.auth.tests.RegistrationPositiveTest.negativeRegistrationTests()'><b>negativeRegistrationTests</b><br>Test class: ru.ct.auth.tests.RegistrationPositiveTest<br>Parameters: User [idAccount=0, name=òzóS)OÅBvN207ê$^qk+8)^~êÁT@4Öÿ)Ï3ìwM#aÁ%05pðÒí13ÐOH=$X3È_*eL$+&13(270)O2rM9W^l6q(9B^Ke)-@7M3p_6TÃ1kÏq78DXIò59(¨Y+ô_~492wï~5~úly@*P8_Ö$, phoneMob=7123072138, email=NtCnJdJtVsk@cgsnBJOV.net, site=ZdyRBTOIciSDZeog.eu, loginName=null, psw=null, type=null, sites=null, startDate=null, endDate=null]</td>
+<td></td>
+<td>6</td>
+<td>ru.ct.auth.tests.RegistrationPositiveTest@48140564</td></tr>
+<tr>
+<td title='ru.ct.auth.tests.RegistrationPositiveTest.negativeRegistrationTests()'><b>negativeRegistrationTests</b><br>Test class: ru.ct.auth.tests.RegistrationPositiveTest<br>Parameters: User [idAccount=0, name=%Ï_Pë#E~9RC!#3-+e%@#83_*I2&~67ÊQ#6(3Vë%, phoneMob=7123015924, email=NtCnJdJtVsk@mIsjOMVXDgL.kz, site=TEcxgUnMoXdBsgoiOqEhbQ.org, loginName=null, psw=null, type=null, sites=null, startDate=null, endDate=null]</td>
+<td></td>
+<td>5</td>
+<td>ru.ct.auth.tests.RegistrationPositiveTest@48140564</td></tr>
+<tr>
+<td title='ru.ct.auth.tests.RegistrationPositiveTest.negativeRegistrationTests()'><b>negativeRegistrationTests</b><br>Test class: ru.ct.auth.tests.RegistrationPositiveTest<br>Parameters: User [idAccount=0, name=ûe1166_3$+*#ò^0V871&B-_5r6@Ô*90#=GÁf3-*2GC0U(M×Íi#Þà%ÕUkÄ!wðW1xÎ=4jÆC4e^!å!6Úæ%4))ÿ46Û4+3#ã9_6~n5Áq¸o%õjÏH76W, phoneMob=7123018723, email=NtCnJdJtVsk@MCbq.kz, site=GkDkkMvkOVEGCx.org, loginName=null, psw=null, type=null, sites=null, startDate=null, endDate=null]</td>
+<td></td>
+<td>5</td>
+<td>ru.ct.auth.tests.RegistrationPositiveTest@48140564</td></tr>
+<tr>
+<td title='ru.ct.auth.tests.RegistrationPositiveTest.negativeRegistrationTests()'><b>negativeRegistrationTests</b><br>Test class: ru.ct.auth.tests.RegistrationPositiveTest<br>Parameters: User [idAccount=0, name=)è-2ÐM5üY0*ÀÛ8tã!rM+~oÑ¸2VÓâÃBOàâEA44ò2R3úÌL2$Áòbq+J6!FF%V)@3ç~W0ö^77~3142þ_Puu+~BXKV0!ÇW(%=k98ë5lïêF35b3x_5^ôzÒ2Ú1æVb6=586#(êÝ$9eû7×04127ñ=5R7%-8ÔFÂGbÄÈ0Q$å6B#$6&7, phoneMob=7123005133, email=NtCnJdJtVsk@weKjiZAJqBa.ru, site=ÅôÞñëÅÞÁüòÑ÷æþâð÷àþÑÝ.ðô, loginName=null, psw=null, type=null, sites=null, startDate=null, endDate=null]</td>
+<td></td>
+<td>5</td>
+<td>ru.ct.auth.tests.RegistrationPositiveTest@48140564</td></tr>
+<tr>
+<td title='ru.ct.auth.tests.RegistrationPositiveTest.negativeRegistrationTests()'><b>negativeRegistrationTests</b><br>Test class: ru.ct.auth.tests.RegistrationPositiveTest<br>Parameters: User [idAccount=0, name=^21+Ó6=ï6*dy4÷5ÿ(^RçjO)384B)û07U-N@zÖ)í%Æ)âå¨7Rpuý3!Ä2U+ìæjà-Ô$Áw~(Cn1-meq-l1fñ0~-Bþ~êq82ü7~6mV7&s_ê~Máu9i(3ýÍ2$%ð1#î6~(S155Á^a)uIvþ9¨f0é4à+ÖèJ%kÏpf4ÜB86Pÿl#sy#9ß&Ia@WJ4ýqõÊ3i4$$(_G^(Fdì, phoneMob=7123064439, email=NtCnJdJtVsk@pAsiGgieWDi.kz, site=vrSiyFineOzuQk.eu, loginName=null, psw=null, type=null, sites=null, startDate=null, endDate=null]</td>
+<td></td>
+<td>5</td>
+<td>ru.ct.auth.tests.RegistrationPositiveTest@48140564</td></tr>
+<tr>
+<td title='ru.ct.auth.tests.RegistrationPositiveTest.negativeRegistrationTests()'><b>negativeRegistrationTests</b><br>Test class: ru.ct.auth.tests.RegistrationPositiveTest<br>Parameters: User [idAccount=0, name=1þîZû*zðï1-B6ÖmM*Q!$I2d×+AWc=-6ó6ôÚ_F04í, phoneMob=7123055727, email=NtCnJdJtVsk@meSEuVYEMEUB.com, site=jheLzQoCrXFJLuQQ.com, loginName=null, psw=null, type=null, sites=null, startDate=null, endDate=null]</td>
+<td></td>
+<td>5</td>
+<td>ru.ct.auth.tests.RegistrationPositiveTest@48140564</td></tr>
 </table><p>
 </body>
 </html>

@@ -203,5 +203,39 @@ public class NavigationHelper extends HelperWithWebDriverBase{
 	}
 
 
+	public void simpleVerifyThatAuthorizationPage() {
+		// проверяет что загрузилась страница регистрации
+		String h2 = findElement(By.tagName("h2")).getText();
+		if(h2.indexOf("Рады видеть, что вы с нами") !=-1){
+		System.out.println("Нахожусь на странице авторизации..... \nтекст в тэге h2:\n " + h2);
+		}else{
+			throw new java.lang.AssertionError("Это не страница регистрации.");
+		}
+		
+	}
+
+
+	public void goToPage(String url) {
+		//метод проиводит переход по определенному урлу
+		switch (url) {
+		case "registration":
+			openUrl(manager.getPropsP().getProperty("url")+ "/" + url);
+			String h2 = findElement(By.tagName("h2")).getText();
+			if(h2.indexOf("Начните пользоваться сервисом") !=-1){
+				System.out.println("Нахожусь на странице регистрации");
+			}else {
+				throw new java.lang.AssertionError("это не страница регистрации");
+			}
+			break;
+		case "reset-password":
+			openUrl(manager.getPropsP().getProperty("url")+ "/" + url);
+			break;
+		default:
+			break;
+		}
+		
+	}
+
+
 
 }

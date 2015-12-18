@@ -1,11 +1,13 @@
 package ru.ct.objects;
 
+import java.util.Arrays;
+
 import ru.ct.objects.User;
 
 public class User {
 	private int idAccount;
 	private String name; 
-	private int phoneMob;
+	private String phoneMob;
 	private String email;
 	private String site;
 	private String loginName;
@@ -53,7 +55,9 @@ public class User {
 	}
 	@Override
 	public String toString() {
-		return "User [loginName=" + loginName + ", type=" + type + "]";
+		return "User [idAccount=" + idAccount + ", name=" + name + ", phoneMob=" + phoneMob + ", email=" + email
+				+ ", site=" + site + ", loginName=" + loginName + ", psw=" + psw + ", type=" + type + ", sites="
+				+ Arrays.toString(sites) + ", startDate=" + startDate + ", endDate=" + endDate + "]";
 	}
 	
 	public User setPSW(String psw) {
@@ -86,11 +90,11 @@ public class User {
 		return this;
 	}
 	
-	public int getPhoneMob() {
+	public String getPhoneMob() {
 		return phoneMob;
 	}
 
-	public User setPhoneMob(int phoneMob) {
+	public User setPhoneMob(String phoneMob) {
 		this.phoneMob = phoneMob;
 		return this;
 	}

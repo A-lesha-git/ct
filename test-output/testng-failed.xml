@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ru.ct.pages.tests.AllPagesTest">
+      <class name="ru.ct.tests.ListTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="allPageLoadingTest"/>
+          <include name="positiveRegistrationTests" invocation-numbers="3"/>
+          <include name="testAuthGenerator"/>
         </methods>
-      </class> <!-- ru.ct.pages.tests.AllPagesTest -->
+      </class> <!-- ru.ct.tests.ListTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

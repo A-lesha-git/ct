@@ -16,6 +16,5 @@ public class AuthDataProvTest extends TestBase{
 	 @Test(dataProvider="authDataFromFile", dataProviderClass = DataGeneratorAuth.class, groups = {"autorithation"})
 	  public void testAuthGenerator(User userUnit) throws Exception {
 		 app.getAutorithationHelper().loginTest(userUnit);
-		 app.getAutorithationHelper().loginTest(userUnit);
 	  }
 }
